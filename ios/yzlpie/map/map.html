@@ -1,0 +1,70 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>地图</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=9" />
+        <script type="text/javascript" src="./jquery.min.js"></script>
+    </head>
+    <style>
+        body {
+            background:url("./map.png") no-repeat;
+        }
+    ul {
+        list-style-type:disc;
+    }
+    </style>
+    <body>
+        <div style="border: 1px sold #F00">
+            <div id="30885_269" class="point" style="visibility: visible;position:absolute;top:103px;left:66px;width:500px;height:350px;width:10 px; height:20px; color:blue; font-size:200%; font-weight:bolder">
+                <ul><li></li></ul>
+            </div>
+            
+            <div id="30885_540" class="point" style="visibility: visible;position:absolute;top:205px;left:147px;width:500px;height:350px;width:10 px; height:20px; color:Blue; font-size:200%; font-weight: bolder">
+                <ul><li></li></ul>
+            </div>
+            
+            <div id="30885_805" class="point" style="visibility: visible;position:absolute;top:155px;left:247px;width:500px;height:350px;width:10 px; height:20px; color:Blue; font-size:200%; font-weight: bolder">
+                <ul><li></li></ul>
+            </div>
+            
+        </div>
+        
+        
+        <script>
+            window.onerror = function(err) {
+                log('window.onerror: ' + err)
+            }
+        
+        function connectWebViewJavascriptBridge(callback) {
+            if (window.WebViewJavascriptBridge) {
+                callback(WebViewJavascriptBridge)
+            } else {
+                document.addEventListener('WebViewJavascriptBridgeReady', function() {
+                                          callback(WebViewJavascriptBridge)
+                                          }, false)
+            }
+        }
+        
+        connectWebViewJavascriptBridge(function(bridge) {
+                                       var uniqueId = 1
+
+                                       bridge.init(function(message, responseCallback) {
+                                                   light(message)
+                                       })
+
+        })
+            </script>
+        
+        
+        <script type="text/javascript">
+            
+            function light(message) {
+                $(".point").css('color', 'blue').css('font-size', '200%');
+                $("#" + message).css('color', 'red').css('font-size', '200%');
+            }
+        </script>
+        
+    </body>
+    
+</html>

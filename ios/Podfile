@@ -1,0 +1,4 @@
+pod 'pop','~> 1.0.7'
+pod 'AFNetworking','~> 2.5.0'
+pod 'WebViewJavascriptBridge', '~> 4.1.4'
+pod 'Reachability', '~> 3.2'

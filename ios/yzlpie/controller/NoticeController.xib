@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoticeController" customModule="yzlpie" customModuleProvider="target">
+            <connections>
+                <outlet property="detail" destination="dlj-gk-0mg" id="gHi-dT-eGv"/>
+                <outlet property="goodsTitle" destination="LQ1-e4-OGf" id="i3N-mn-AsR"/>
+                <outlet property="imageView" destination="7ZL-q9-xQa" id="Bn6-C8-c7R"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wood.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4pE-iQ-b8G">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ZL-q9-xQa">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="k4Z-JQ-OpC"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="郁金香是荷兰国花，非常香，非常美。郁金香是荷兰国花，非常香，非常美。郁金香是荷兰国花，非常香，非常美。郁金香是荷兰国花，非常香，非常美。" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlj-gk-0mg">
+                    <rect key="frame" x="158" y="37" width="142" height="113"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="郁金香" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQ1-e4-OGf">
+                    <rect key="frame" x="158" y="0.0" width="142" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="S1g-8v-Tje"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4pE-iQ-b8G" secondAttribute="bottom" id="5Gb-oN-FPO"/>
+                <constraint firstItem="7ZL-q9-xQa" firstAttribute="leading" secondItem="4pE-iQ-b8G" secondAttribute="leading" id="8GT-5V-nAz"/>
+                <constraint firstItem="LQ1-e4-OGf" firstAttribute="top" secondItem="4pE-iQ-b8G" secondAttribute="top" id="8Og-XV-G7H"/>
+                <constraint firstItem="LQ1-e4-OGf" firstAttribute="leading" secondItem="7ZL-q9-xQa" secondAttribute="trailing" constant="8" symbolic="YES" id="CIp-gn-1GC"/>
+                <constraint firstItem="4pE-iQ-b8G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FdB-A0-NWe"/>
+                <constraint firstItem="dlj-gk-0mg" firstAttribute="top" secondItem="LQ1-e4-OGf" secondAttribute="bottom" constant="2" id="Fyf-bj-BSq"/>
+                <constraint firstAttribute="trailing" secondItem="4pE-iQ-b8G" secondAttribute="trailing" id="V9d-fR-cQm"/>
+                <constraint firstItem="dlj-gk-0mg" firstAttribute="bottom" secondItem="4pE-iQ-b8G" secondAttribute="bottom" id="VSh-yH-LFs"/>
+                <constraint firstItem="7ZL-q9-xQa" firstAttribute="bottom" secondItem="4pE-iQ-b8G" secondAttribute="bottom" id="YUa-Hq-hYn"/>
+                <constraint firstItem="dlj-gk-0mg" firstAttribute="leading" secondItem="LQ1-e4-OGf" secondAttribute="leading" id="ZuS-Kz-A6b"/>
+                <constraint firstItem="4pE-iQ-b8G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bQN-Dc-56w"/>
+                <constraint firstItem="LQ1-e4-OGf" firstAttribute="trailing" secondItem="4pE-iQ-b8G" secondAttribute="trailing" id="cwq-9P-ClC"/>
+                <constraint firstItem="7ZL-q9-xQa" firstAttribute="top" secondItem="4pE-iQ-b8G" secondAttribute="top" id="jiL-BS-IhW"/>
+                <constraint firstItem="dlj-gk-0mg" firstAttribute="trailing" secondItem="LQ1-e4-OGf" secondAttribute="trailing" id="qnk-7P-0df"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="437" y="295"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wood.jpg" width="650" height="450"/>
+    </resources>
+</document>

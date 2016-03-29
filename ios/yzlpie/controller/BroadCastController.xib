@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BroadCastController" customModule="yzlpie" customModuleProvider="target">
+            <connections>
+                <outlet property="bcText" destination="sTt-yT-kUm" id="ebd-Fa-029"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="broadcastPic.gif" translatesAutoresizingMaskIntoConstraints="NO" id="e1z-Xd-L0G">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="茉莉花全场八折优惠,瞧一瞧，看一看啊！！！" translatesAutoresizingMaskIntoConstraints="NO" id="sTt-yT-kUm">
+                    <rect key="frame" x="105" y="18" width="182" height="66"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="182" id="w1M-ij-Jno"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="e1z-Xd-L0G" secondAttribute="bottom" id="Qqr-JE-Oec"/>
+                <constraint firstAttribute="trailing" secondItem="e1z-Xd-L0G" secondAttribute="trailing" id="fNu-M1-AKH"/>
+                <constraint firstItem="sTt-yT-kUm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="18" id="khu-A7-OY9"/>
+                <constraint firstItem="e1z-Xd-L0G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rlK-V8-YUm"/>
+                <constraint firstAttribute="trailing" secondItem="sTt-yT-kUm" secondAttribute="trailing" constant="13" id="wYU-Jg-jZf"/>
+                <constraint firstAttribute="bottom" secondItem="sTt-yT-kUm" secondAttribute="bottom" constant="16" id="yUF-5h-Rsd"/>
+                <constraint firstItem="e1z-Xd-L0G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zL5-tp-53R"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="broadcastPic.gif" width="796" height="142"/>
+    </resources>
+</document>
